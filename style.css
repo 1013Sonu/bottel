@@ -1,0 +1,709 @@
+@font-face {
+    font-family: druk;
+    src: url(./Druk-Medium-Trial.otf);
+}
+@font-face {
+    font-family: yank;
+    src: url(./Yank.ttf);
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#image{
+    position: fixed;
+    z-index: 999999;
+    height: 95vh;
+    left: 40%;
+    top: 10%;
+}
+#pg1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f2efe6;
+    position: relative;
+}
+#nav{
+    height: 15vh;
+    width: 100vw;
+    /* border-bottom: 2px solid ; */
+    position: relative;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f2efe6;
+    opacity: 1;
+}
+#nav #l{
+    height: 2px;
+    width: 90vw;
+    background-color: black;
+    position: absolute;
+    top: 95%;
+    left: 3%;
+    opacity: 1;
+
+}
+#nav #l2{
+    height: 1px;
+    width: 90vw;
+    background-color: black;
+    position: absolute;
+    top: 90%;
+    left: 3%;
+    opacity: 1;
+}
+#nav #icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    opacity: 1;
+}
+#nav #icon i{
+    font-size: 20px;
+    font-weight: 900;
+}
+#nav #ii{
+    height: 8vh;
+    opacity: 1;
+    position: absolute;
+    left: 45%;
+top: 30%;
+}
+#nav img{
+position: absolute;
+left: 48%;
+top: 10%;
+    height: 15vh;
+    transition: 0.5s;
+    opacity: 0;
+}
+#nav img:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.8s;
+ }
+
+#nav button{
+    height: 10vh;
+    width: 10vw;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-family: gilroy;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    border: 1px solid white;
+}
+#nav button:hover{
+    background-color: darkred;
+}
+
+#pg1>h4{
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    font-family: yank;
+}
+#pg1>h1{
+    position: absolute;
+    top: 35%;
+    left: 2%;
+    width: 5vw;
+    font-size: 80px;
+    font-family: gilroy;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+#pg1>h2{
+    position: absolute;
+    top: 65%;
+    left: 2%;
+    font-family: gilroy;
+    font-weight: 600;
+    font-size: 22px;
+    width: 35vw;
+} 
+#pg1>p{
+    position: absolute;
+    top: 73%;
+    left: 2%;
+    width: 30vw;
+}
+#pg1left{
+    height: 60vh;
+    width: 35vw;
+    /* background-color: red; */
+    position: absolute;
+    top: 20%;
+    left: 60%;
+color: #0d73ae;   
+font-family: gilroy;
+letter-spacing: -2px;
+}
+#pg1left h1{
+    width: 18vw;
+    font-size: 35px;
+    position: absolute;
+    font-family: druk;
+letter-spacing: 1px;
+    left: 40%;
+    top: 10%;
+}
+#pg1left span{
+    font-size: 80px;
+    font-family: gilroy;
+    font-weight:900;
+}
+#pg1left img{
+    position: absolute;
+    top: 88%;
+    left: 20%;
+    height: 18vh;
+}
+#pg2{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f2efe6;
+    position: relative;
+}
+#pg2>h1{
+    font-family: gilroy;
+    font-weight: 900;
+    font-size: 180px;
+    letter-spacing: -2px;
+margin-left: 90px;
+margin-top: -1%;
+color: #0d73ae;
+}
+#pg2 #pg2s{
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+
+} 
+#pg2s #one{
+    height: 80vh;
+    width: 50vw;
+    background-color: #f2efe6;
+    position: relative;
+}
+#pg2s #one img{
+    height: 50vh;
+    position: absolute;
+    left: 10%;
+    top: -8%;
+}
+#pg2s #one h1{
+    height: 50vh;
+    position: absolute;
+    left: 10%;
+    top: 56%;
+    font-family: yank;
+    font-size: 25px;
+    font-weight: 100;
+    width: 40vw;
+}
+#pg2s #one #icon{
+    position: absolute;
+    left: 36%;
+    z-index: 999;
+    border: 1px solid red;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 45px;
+    top: 25%;
+}
+#pg2s #one #icon:hover{
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.336);
+}
+
+#pg2s #two{
+    height: 80vh;
+    width: 50vw;
+    background-color: #f2efe6;
+    position: relative;
+    flex-direction: column;
+}
+#pg2s #two>h1{
+    margin-left: 30%;
+    margin-top: 3%;
+    font-family: gilroy;
+    font-size: 25px;
+}
+#pg2s #two>p{
+    width: 25vw;
+    margin-left: 190px;
+}
+#pg2s #two #p2{
+    width: 25vw;
+    margin-left: 190px;
+    margin-top: 4%;
+}
+#pg3{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f2efe6;
+    position: relative;
+}
+#pg3>h1{
+    font-family: gilroy;
+    font-weight: 900;
+    font-size: 150px;
+    letter-spacing: -8px;
+margin-left: 60px;
+color: #0d73ae;   
+}
+ #pg3 #pg3s{
+    height: 80vh;
+    width: 100vw;
+    background-color: red;
+    display: flex;
+ }
+ #pg3 #pg3s #one{
+    height: 80vh;
+    width: 50vw;
+    background-color:  #f2efe6;
+    position: relative;
+ }
+ #pg3s #one>h1{
+    margin-left: 10px;
+ }
+ #pg3s #one>h2{
+    margin-left: 10px;
+    font-size: 40px;
+    font-family: gilroy;
+    font-weight: 900;
+ } 
+ #pg3s #one>h3{
+    margin-left: 20%;
+    width: 23vw;
+    margin-top: -5%;
+    font-weight: 200;
+ }
+ #pg3s #one #line{
+    height: 2px;
+    width: 30vw;
+    background-color: black;
+    margin-left: 10px;
+ }
+ #pg3 #pg3s #two{
+    height: 80vh;
+    width: 50vw;
+    background-color:  #f2efe6;
+    position: relative;
+ }
+
+ #pg3s #two >h1{
+    margin-top: 18%;
+    margin-left: 40%;
+    font-family: gilroy;font-weight: 200;
+ }
+ #pg3s #two >h2{
+    width: 15vw;
+    margin-left: 40%;
+    font-family: gilroy;
+    font-weight: 900;
+    margin-top: 5%;
+    font-size: 25px;
+
+ }
+ #pg3s #two >h3{
+    width: 28vw;
+    margin-left: 45%;
+    margin-top: 1%;
+    font-family: gilroy;
+    font-weight: 200;
+    font-size: 15px;
+ }
+ #pg3s #two>img{
+    height: 30vh;
+    margin-left: 60%;
+    margin-top: -18%;
+ }
+ #pg3s #two #line{
+    height: 2px;
+    width: 30vw;
+    background-color: black;
+    margin-left: 30%;
+    margin-top: -5%;
+ }
+ #pg4{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #f2efe6;
+position: relative;
+ }
+ #pg4 #pg4i{
+    height: 60vh;
+    width: 30vw;
+    /* background-color: red; */
+    position: relative;
+ }
+ #pg4 #pg4i #i1{
+    height: 50vh;
+ }
+ #pg4 #pg4i h1{
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    font-size: 20px;
+font-family: gilroy;
+ font-weight: 600;
+ text-decoration: rgba(0, 0, 0, 0.308) underline;
+ }
+ #pg4 #pg4i h2{
+    position: absolute;
+    left: 18%;
+    top: 25%;
+    font-size: 14px;
+    font-family: gilroy;
+     font-weight: 500;
+     width: 15vw;
+     text-align: center;
+}
+#pg4 #pg4i2{
+    height: 60vh;
+    width: 30vw;
+    /* background-color: red; */
+    position: relative;
+    top: -40%;
+    left: 20%;
+ }
+ #pg4 #pg4i2 #i2{
+    height: 65vh;
+ }
+ #pg4 #pg4i2 h1{
+    position: absolute;
+    font-size: 20px;
+    left: 50%;
+    top: 10%;
+    text-decoration: rgba(0, 0, 0, 0.263) underline;
+ }
+ #pg4 #pg4i2 h2{
+    position: absolute;
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 500;
+    width: 15vw;
+    left: 35%;
+    top: 30%;
+ }
+ #pg4 #pg4i3{
+    height: 60vh;
+    width: 30vw;
+    /* background-color: red; */
+    position: relative;
+    top: -120%;
+    right: -140%;
+    color: white;
+ }
+ #pg4 #pg4i2 #i3{
+    height: 80vh;
+ }
+ #pg4 #pg4i3 h1{
+    position: absolute;
+    font-size: 20px;
+    left: 55%;
+    top: 20%;
+    font-family: gilroy;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: underline;
+ }
+ #pg4 #pg4i3 h2{
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    font-family: gilroy;
+    font-weight: 100;
+    font-size: 15px;
+    text-align: center;
+    width: 18vw;
+ }
+ #pg4 #i4{
+    height: 60vh;
+    position: absolute;
+    bottom: 1%;
+    left: 5%;
+    transform: rotate(-10deg);
+ }
+
+ #pg5{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #f2efe6;
+position: relative;
+ }
+ #pg5 h1{
+    position: absolute;
+    font-size: 20px;
+    font-family: yank;
+    top: 30%;
+    left: 50%;
+ }
+ #pg5 h2{
+    position: absolute;
+    font-size: 80px;
+    letter-spacing: -5px;
+    font-family: gilroy;
+    font-weight: bolder;
+    top: 35%;
+    left: 40%;
+ }
+ #pg5 h3{
+    position: absolute;
+    font-size: 10px;
+    letter-spacing: 5px;
+    font-family: gilroy;
+    font-weight: bolder;
+    bottom: 8%;
+    left: 50%;
+ }
+
+ #pg6{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #f2efe6;
+position: relative;
+ }
+ #pg6 h1{
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    letter-spacing: -15px;
+    font-family: gilroy;
+    font-weight: 900;
+    font-size: 180px;
+color: #0d73ae;   
+ }
+ #p6box{
+    height: 60vh;
+    width: 90vw;
+    background-color: #0d73ae;
+    position: relative;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+ }
+ 
+#p6box button{
+    height: 10vh;
+    width: 10vw;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-family: gilroy;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(5, 5, 47);
+    border: 1px solid black;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#p6box button:hover{
+    background-color: darkred;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#p6box img{
+    height: 30vh;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+ #pg7{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #f2efe6;
+position: relative;
+ }
+ #pg7 img{
+    height: 75vh;
+    position: absolute;
+    top: 18%;
+    left: 5%;
+ }
+#p7l{
+    width: 30vw;
+    height: 80vh;
+    /* background-color: red; */
+    position: absolute;
+    left: 60%;
+    top: 18%;
+}
+#p7l h1{
+    font-size: 25px;
+    position: absolute;
+    font-family: yank;
+    top: 5%;
+    left: 5%;
+}
+#p7l h2{
+    font-size: 45px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+#p7l p{
+    font-size: 15px;
+    position: absolute;
+    top: 40%;
+    width: 25vw;
+    left: 5%;
+
+}
+#p7l button{
+    font-size: 15px;
+    position: absolute;
+    top: 65%;
+    height: 8vh;
+    font-family: gilroy;
+    font-weight: 900;
+    color: white;
+    background-color:black;
+    border: 1px solid;
+    left: 5%;
+    padding: 10px 10px;
+}
+#p7l button:hover{
+    cursor: pointer;
+    background-color: darkred;
+    transition: 0.5s;
+}
+
+#pg8{
+    height: 100vh;
+    width: 100vw;
+    background-color:  black;
+    position: relative;
+    display: flex;
+}
+#pg8 #eone{
+    height: 100vh;
+    width: 50vw;
+    color: white;
+}
+#pg8 #eone a{
+    color: white; 
+    text-decoration: none;
+    font-size: 40px;
+    width: 25vw;
+    height: 10vh;
+    display: flex;
+    margin-left: 40%;
+    margin-top: 4%;
+    flex-direction: column;
+    /* background-color: red; */
+    font-family: gilroy;
+    font-weight: 900;
+}
+#pg8 #eone a:hover{
+    color: rgba(255, 0, 0, 0.61);
+    transition: 0.5s;
+cursor: pointer;
+}
+#pg8 #etwo{
+    height: 100vh;
+    width: 50vw;
+    position: relative;
+    /* background-color: blue; */
+}
+#pg8 #etwo h1{
+    font-family: yank;
+    color: white;
+    font-weight: 200;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+#pg8 #etwo button{
+    font-family: gilroy;
+    color: white;
+    background-color:black;
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid white;
+    position: absolute;
+    top: 30%;
+    z-index: 999;
+    padding: 1px 10px;
+    left: 54%;
+    width: 8vw;
+    height: 8vh;
+    transition: 0.5s;
+}
+#pg8 #etwo button:hover{
+    cursor: pointer;
+    background-color: darkred;
+}
+#pg8 #etwo input{
+    font-family: gilroy;
+    /* color: white; */
+    font-weight: 500;
+    position: absolute;
+    top: 30%;
+    padding: 1px 10px;
+    left: 10%;
+    width: 30vw;
+    height: 8vh;
+}
+#pg8 #etwo #p8ei{
+    color: white;
+    position: relative;
+    /* background-color: red; */
+    font-size: 40px;
+    top: 45%;
+    left: 20%;
+}
+#pg8 #etwo #p8ei i:hover{
+    color: red;
+    cursor: pointer;
+    transition:.5s;
+}
+#pg8 #pg8end #pg8lend{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    /* background-color: red; */
+}
+#pg8 #pg8end #pg8lend a{
+    color: white;
+    text-decoration: underline 2px;
+    gap: 50px;
+    line-height: 2;
+    margin-left: 8%;
+    font-size: 12px;
+}
+#pg8 #pg8end #pg8lend a:hover{
+    cursor: pointer;
+    color: darkred;
+    transition: 0.5s;
+}
+#pg8 #pg8end #pg8rend h1{
+    position: absolute;
+    bottom: 20%;
+    left: 55%;
+    color: white;
+    font-size: 12px;
+    font-family: gilroy;
+    font-weight: 200;
+    width: 33vw;
+    line-height: 1;
+}
